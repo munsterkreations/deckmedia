@@ -1,0 +1,103 @@
+.mCustomScrollbar {
+    -ms-touch-action: pinch-zoom;
+    touch-action: pinch-zoom
+}
+
+.mCustomScrollbar.mCS_no_scrollbar,
+.mCustomScrollbar.mCS_touch_action {
+    -ms-touch-action: auto;
+    touch-action: auto
+}
+
+.mCustomScrollBox {
+    position: relative;
+    overflow: hidden;
+    block-size: 100%;
+    max-inline-size: 100%;
+    outline: 0;
+    direction: ltr
+}
+
+.mCSB_container {
+    overflow: hidden;
+    inline-size: auto;
+    block-size: auto
+}
+
+.mCSB_inside>.mCSB_container {
+    margin-inline-end: 30px
+}
+
+.mCSB_container.mCS_no_scrollbar_y.mCS_y_hidden {
+    margin-inline-end: 0
+}
+
+.mCS-dir-rtl>.mCSB_inside>.mCSB_container {
+    margin-inline-end: 0;
+    margin-inline-start: 30px
+}
+
+.mCS-dir-rtl>.mCSB_inside>.mCSB_container.mCS_no_scrollbar_y.mCS_y_hidden {
+    margin-inline-start: 0
+}
+
+.mCSB_scrollTools {
+    position: absolute;
+    inline-size: 16px;
+    block-size: auto;
+    inset-inline-start: auto;
+    inset-block-start: 0;
+    inset-inline-end: 0;
+    inset-block-end: 0;
+    opacity: .75;
+    -ms-filter: "alpha(opacity=75)";
+    filter: "alpha(opacity=75)";
+    -webkit-filter: "alpha(opacity=75)";
+}
+    ;.mCSB_outside+.mCSB_scrollTools{
+        inset-inline-end:-26px;
+    }
+    .mCS-dir-rtl>.mCSB_inside>.mCSB_scrollTools,.mCS-dir-rtl>.mCSB_outside+.mCSB_scrollTools{
+        inset-inline-end:auto;
+        inset-inline-start:0;
+    }
+    .mCS-dir-rtl>.mCSB_outside+.mCSB_scrollTools{
+        inset-inline-start:-26px;
+    }
+    .mCSB_scrollTools .mCSB_draggerContainer{
+        position:absolute;
+        inset-block-start:0;
+        inset-inline-start:0;
+        inset-block-end:0;
+        inset-inline-end:0;
+        block-size:auto;
+        .mCSB_scrollTools a+.mCSB_draggerContainer{
+            margin:20px 0;
+            .mCSB_scrollTools .mCSB_draggerRail{
+                inline-size:2px;
+                block-size:100%;
+                margin:0 auto;
+                -webkit-border-radius:16px;
+                -moz-border-radius:16px;
+                -ms-border-radius:16px;
+                border-radius:16px;
+                -webkit-border-radius:16px;
+                -moz-border-radius:16px;
+                -ms-border-radius:16px;
+                -o-border-radius:16px;
+                opacity:0;
+                -ms-filter:"alpha(opacity=0)";
+                filter:"alpha(opacity=0)"";
+                -webkit-filter:"alpha(opacity=0)"";
+}
+
+.mCS-autoHide:hover>.mCustomScrollBox>.mCSB_scrollTools,
+.mCS-autoHide:hover>.mCustomScrollBox~.mCSB_scrollTools,
+.mCustomScrollBox:hover>.mCSB_scrollTools,
+.mCustomScrollBox:hover~.mCSB_scrollTools,
+.mCustomScrollbar>.mCustomScrollBox>.mCSB_scrollTools.mCSB_scrollTools_onDrag,
+.mCustomScrollbar>.mCustomScrollBox~.mCSB_scrollTools.mCSB_scrollTools_onDrag {
+    opacity: 1;
+    -ms-filter: "alpha(opacity=100)";
+    filter: "alpha(opacity=100)"" filter: "alpha(opacity=100)""; -webkit-filter: "alpha(opacity=100)"";
+background-color:#fff;background-color:rgba(255,255,255,.9);
